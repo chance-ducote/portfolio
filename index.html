@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Chance Ducote, featuring web development skills and projects.">
+    <meta name="author" content="Chance Ducote">
+
+    <title>Chance Ducote | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                Chance <span>Ducote</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INTRODUCTION -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+
+                <!-- Left: Introduction -->
+                <div class="hero-content">
+                    <p class="hero-label">HELLO, I'M</p>
+
+                    <h1>Chance Ducote<span class="accent">.</span></h1>
+
+                    <h2>Software QA Tester & Web Developer</h2>
+
+                    <p class="hero-description">
+                        I specialize in software quality assurance
+                        and web development, with a focus on building
+                        reliable, functional, and user-friendly applications.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#about" class="btn btn-outline">About Me</a>
+                    </div>
+                </div>
+
+                <!-- Right: Code Editor Visual -->
+                <div class="code-window">
+
+                    <div class="code-header">
+                        <div class="window-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="file-name">about.js</span>
+                    </div>
+
+                    <div class="code-content">
+                        <pre><code id="typing-code"></code><span class="typing-cursor" aria-hidden="true"></span></pre>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+
+                <p>
+                    I am a software quality assurance professional
+                    with a background in software development
+                    and web design.
+                </p>
+
+                <p>
+                    This portfolio highlights my education,
+                    technical experience, and projects completed
+                    throughout my studies.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section alternate">
+            <div class="container">
+                <h2>Technical Skills</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML & CSS</h3>
+                        <p>Web structure, styling, and responsive design.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Interactive websites and DOM manipulation.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                        <p>Programming and test automation.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>C#</h3>
+                        <p>Object-oriented programming and Unity development.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Java</h3>
+                        <p>Application development and programming fundamentals.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Software Testing</h3>
+                        <p>Quality assurance and test execution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-image">Project Image</div>
+                        <h3>Project One</h3>
+                        <p>
+                            A brief description of the project,
+                            its purpose, and technologies used.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">Project Image</div>
+                        <h3>Project Two</h3>
+                        <p>
+                            A brief description of the project,
+                            its purpose, and technologies used.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">Project Image</div>
+                        <h3>Project Three</h3>
+                        <p>
+                            A brief description of the project,
+                            its purpose, and technologies used.
+                        </p>
+                        <a href="#" class="project-link">View Project</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section alternate">
+            <div class="container">
+                <h2>Contact Me</h2>
+
+                <p>
+                    Have a question or want to get in touch?
+                    Send me a message below.
+                </p>
+
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <p id="form-status" role="status"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="year"></span> Chance Ducote. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
