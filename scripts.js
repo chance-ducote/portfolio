@@ -22,7 +22,7 @@ contactForm.addEventListener("submit", function(event) {
 
 const typingCode = document.getElementById("typing-code");
 
-const codeText = `const developer = {
+const codeText = `const webDeveloper = {
         name: "Chance Ducote",
         role: "Software QA",
         skills: [
@@ -52,7 +52,7 @@ function highlightCode(text) {
     let escaped = escapeHTML(text);
 
     return escaped.replace(
-        /"[^"]*"|\bconst\b|\bdeveloper\b/g,
+        /"[^"]*"|\bconst\b|\bwebDeveloper\b/g,
         function(match) {
 
             if (match.startsWith('"')) {
